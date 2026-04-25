@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FFFDD0;
+  --color-solar: #FFD700;
+  --color-peach: #FFDAB9;
+  --color-vibrant: #FF8C00;
+  --color-charcoal: #2F2F2F;
+  
+  --border-width-3: 3px;
+  
+  --shadow-brutal: 5px 5px 0px #2F2F2F;
+  --shadow-brutal-hover: 7px 7px 0px #2F2F2F;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-charcoal font-sans;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .brutal-card {
+    @apply bg-white border-3 border-charcoal shadow-brutal;
+  }
+  
+  .brutal-btn {
+    @apply border-3 border-charcoal shadow-brutal transition-all duration-200;
+  }
+  
+  .brutal-btn:hover {
+    @apply -translate-x-[2px] -translate-y-[2px] shadow-brutal-hover;
+  }
+
+  .brutal-btn:active {
+    @apply translate-x-[2px] translate-y-[2px] shadow-none;
+  }
+}
+
+/* Custom scrollbar for Neo Brutalism */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFDD0;
+  border-left: 3px solid #2F2F2F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFD700;
+  border: 3px solid #2F2F2F;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF8C00;
+}
