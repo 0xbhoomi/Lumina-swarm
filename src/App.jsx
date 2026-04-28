@@ -24,7 +24,9 @@ const IntegrationBar = () => (
       
       <div className="flex gap-6 items-center flex-shrink-0">
         <div className="flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-lg">
-          <img src="https://unavatar.io/twitter/0G_labs" className="w-4 h-4 rounded-full" alt="0G Logo" />
+          <a href="https://0g.ai/" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:scale-110 transition-transform">
+            <img src="https://unavatar.io/twitter/0G_labs" className="w-4 h-4 rounded-full" alt="0G Logo" />
+          </a>
           <div className="flex flex-col">
             <span className="text-[8px] font-black uppercase leading-none">0G Storage + Compute</span>
             <span className="text-[9px] font-black text-green-400 flex items-center gap-1">CONNECTED <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" /></span>
@@ -32,7 +34,9 @@ const IntegrationBar = () => (
         </div>
 
         <div className="flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-lg">
-          <Radio className="w-4 h-4 text-peach" />
+          <a href="https://gensyn.ai/" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:scale-110 transition-transform">
+            <img src="https://unavatar.io/twitter/gensynai" className="w-4 h-4 rounded-full bg-white" alt="Gensyn Logo" />
+          </a>
           <div className="flex flex-col">
             <span className="text-[8px] font-black uppercase leading-none">Gensyn AXL</span>
             <span className="text-[9px] font-black text-green-400 flex items-center gap-1">P2P ONLINE (9002) <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" /></span>
@@ -40,7 +44,9 @@ const IntegrationBar = () => (
         </div>
 
         <div className="flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-lg">
-          <img src="https://unavatar.io/twitter/KeeperHubApp" className="w-4 h-4 rounded-full bg-white" alt="KeeperHub Logo" />
+          <a href="https://keeperhub.com/" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:scale-110 transition-transform">
+            <img src="https://unavatar.io/twitter/KeeperHubApp" className="w-4 h-4 rounded-full bg-white" alt="KeeperHub Logo" />
+          </a>
           <div className="flex flex-col">
             <span className="text-[8px] font-black uppercase leading-none">KeeperHub MCP</span>
             <span className="text-[9px] font-black text-solar flex items-center gap-1">EXECUTION READY <div className="w-1.5 h-1.5 bg-solar rounded-full animate-pulse" /></span>
@@ -48,7 +54,9 @@ const IntegrationBar = () => (
         </div>
 
         <div className="flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-lg">
-          <img src="https://cryptologos.cc/logos/uniswap-uni-logo.svg" className="w-4 h-4 rounded-full" alt="Uniswap Logo" />
+          <a href="https://uniswap.org/" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:scale-110 transition-transform">
+            <img src="https://cryptologos.cc/logos/uniswap-uni-logo.svg" className="w-4 h-4 rounded-full" alt="Uniswap Logo" />
+          </a>
           <div className="flex flex-col">
             <span className="text-[8px] font-black uppercase leading-none">Uniswap V3</span>
             <span className="text-[9px] font-black text-green-400 flex items-center gap-1">QUOTES LIVE <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" /></span>
