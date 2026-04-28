@@ -79,25 +79,25 @@ All agents communicate **privately peer-to-peer** using Gensyn AXL, store persis
 ```mermaid
 flowchart TD
     %% ==================== PROBLEM ====================
-    subgraph Problem[" THE PROBLEM"]
-        A[Fast-Moving Crypto Markets\n24/7 News + Price Action]
-        B[Human Limitations\nCan't monitor everything simultaneously]
-        C[Single AI Agent Failures\n• No persistent memory\n• Unreliable execution\n• No coordination\n• High failure rate]
+    subgraph Problem["THE PROBLEM"]
+        A["Fast-Moving Crypto Markets<br/>24/7 News + Price Action"]
+        B["Human Limitations<br/>Can't monitor everything simultaneously"]
+        C["Single AI Agent Failures<br/>- No persistent memory<br/>- Unreliable execution<br/>- No coordination<br/>- High failure rate"]
         A --> B
         B --> C
     end
 
-    %% ==================== LUMINASWARM SOLUTION ====================
-    subgraph LuminaSwarm[" LUMINASWARM SOLUTION\nMulti-Agent AI Trading Swarm"]
-       User[ User Query\n"Hey Swarm, what about ETH?"]
+    %% ==================== SOLUTION ====================
+    subgraph LuminaSwarm["LUMINASWARM SOLUTION<br/>Multi-Agent AI Trading Swarm"]
+        User["User Query<br/>Hey Swarm, what about ETH?"]
 
-        OpenClaw[ OpenClaw Framework\nAgent Orchestration Layer]
+        OpenClaw["OpenClaw Framework<br/>Agent Orchestration Layer"]
 
-        Listener[ LISTENER AGENT\n• Real-time social sentiment monitoring\n• Farcaster, X, decentralized graphs\n• Output: Sentiment Score 0.0-1.0]
+        Listener["LISTENER AGENT<br/>- Real-time sentiment monitoring<br/>- Farcaster, X<br/>- Output: Sentiment Score"]
 
-        Analyst[ ANALYST AGENT\n• Technical analysis & chart patterns\n• Uniswap V3 liquidity depth check\n• Output: Technical Score + Opportunity]
+        Analyst["ANALYST AGENT<br/>- Technical analysis<br/>- Liquidity check<br/>- Output: Opportunity"]
 
-        Executor[ EXECUTOR AGENT\n• Risk assessment\n• Consensus building\n• Final trade decision\n• Output: Trade Parameters]
+        Executor["EXECUTOR AGENT<br/>- Risk assessment<br/>- Decision making<br/>- Output: Trade Parameters"]
 
         User --> OpenClaw
         OpenClaw <--> Listener
@@ -105,17 +105,17 @@ flowchart TD
         OpenClaw <--> Executor
     end
 
-    %% ==================== AGENT COMMUNICATION ====================
-    Listener -- " Peer-to-Peer Negotiation\nvia Gensyn AXL" --- Analyst
-    Analyst -- " Peer-to-Peer Negotiation\nvia Gensyn AXL" --- Executor
-    Executor -- " Peer-to-Peer Negotiation\nvia Gensyn AXL" --- Listener
+    %% ==================== COMMUNICATION ====================
+    Listener --- Analyst
+    Analyst --- Executor
+    Executor --- Listener
 
     %% ==================== INFRASTRUCTURE ====================
-    subgraph Infrastructure[" DECENTRALIZED INFRASTRUCTURE"]
-        OG[0G Storage + Compute\n• Persistent Memory (KV + Log)\n• Sealed Inference\n• Self-evolving learning]
-        Keeper[KeeperHub MCP\n• Safe Execution\n• Gas Optimization\n• Retry Logic\n• MEV Protection 99.9%]
-        Uni[Uniswap V3\n• Base Sepolia Testnet\n• Real quotes & swaps]
-        iNFT[ERC-7857 iNFT Brain\n• Ownership of swarm intelligence\n• Tradable & monetizable]
+    subgraph Infrastructure["DECENTRALIZED INFRASTRUCTURE"]
+        OG["0G Storage + Compute<br/>- Persistent Memory<br/>- Learning"]
+        Keeper["KeeperHub MCP<br/>- Safe Execution<br/>- Gas Optimization"]
+        Uni["Uniswap V3<br/>- Base Sepolia"]
+        iNFT["ERC-7857 iNFT Brain<br/>- Tradable Intelligence"]
     end
 
     OpenClaw --> OG
@@ -129,30 +129,15 @@ flowchart TD
     OpenClaw --> iNFT
 
     %% ==================== OUTPUT ====================
-    subgraph Output[" OUTPUT & VALUE CREATED"]
-        Trade[ Autonomous Safe Trade\nExecuted on Uniswap V3]
-        Learn[ Persistent Learning\nSwarm becomes smarter with every trade]
-        Own[ Tradable iNFT Brain\nOwn, sell or share the entire swarm]
+    subgraph Output["OUTPUT & VALUE"]
+        Trade["Autonomous Safe Trade"]
+        Learn["Persistent Learning"]
+        Own["Tradable iNFT Brain"]
     end
 
     Uni --> Trade
     OG --> Learn
     iNFT --> Own
-
-    %% ==================== STYLING ====================
-    classDef problem fill:#FFEDD5,stroke:#FF9F1C,stroke-width:3px
-    classDef solution fill:#FFF8EE,stroke:#FF9F1C,stroke-width:4px
-    classDef agent fill:#FCD34D,stroke:#FF9F1C,stroke-width:3px
-    classDef infra fill:#FFEDD5,stroke:#FF9F1C,stroke-width:2px
-    classDef output fill:#A7E8A7,stroke:#FF9F1C,stroke-width:3px
-
-    class Problem problem
-    class LuminaSwarm solution
-    class Listener,Analyst,Executor agent
-    class Infrastructure infra
-    class Output output
-
-
-
+```
 
 
