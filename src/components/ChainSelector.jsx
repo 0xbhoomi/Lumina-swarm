@@ -5,11 +5,11 @@ import { useSwarm } from '../context/SwarmContext';
 
 // Available blockchain networks
 const chains = [
-  { id: 'base', name: 'Base Sepolia', asset: 'ETH', pair: 'ETH/USDC', icon: 'BASE' },
-  { id: 'eth', name: 'Ethereum Sepolia', asset: 'ETH', pair: 'ETH/WETH', icon: 'ETH' },
-  { id: 'arb', name: 'Arbitrum Sepolia', asset: 'ETH', pair: 'ETH/USDC', icon: 'ARB' },
-  { id: 'bnb', name: 'BNB Testnet', asset: 'BNB', pair: 'BNB/ETH', icon: 'BNB' },
-  { id: 'sol', name: 'Solana Devnet', asset: 'SOL', pair: 'SOL/USDC', icon: 'SOL', disabled: true },
+  { id: 'base', name: 'Base Mainnet', asset: 'ETH', pair: 'ETH/USDC', icon: 'BASE' },
+  { id: 'eth', name: 'Ethereum Mainnet', asset: 'ETH', pair: 'ETH/USDT', icon: 'ETH' },
+  { id: 'arb', name: 'Arbitrum One', asset: 'ETH', pair: 'ETH/USDC', icon: 'ARB' },
+  { id: 'bnb', name: 'BNB Smart Chain', asset: 'BNB', pair: 'BNB/USDT', icon: 'BNB' },
+  { id: 'sol', name: 'Solana Mainnet', asset: 'SOL', pair: 'SOL/USDC', icon: 'SOL', disabled: true },
 ];
 
 const ChainSelector = () => {

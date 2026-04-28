@@ -24,7 +24,7 @@ const IntegrationBar = () => (
       
       <div className="flex gap-6 items-center flex-shrink-0">
         <div className="flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-lg">
-          <Database className="w-4 h-4 text-solar" />
+          <img src="https://unavatar.io/twitter/0G_labs" className="w-4 h-4 rounded-full" alt="0G Logo" />
           <div className="flex flex-col">
             <span className="text-[8px] font-black uppercase leading-none">0G Storage + Compute</span>
             <span className="text-[9px] font-black text-green-400 flex items-center gap-1">CONNECTED <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" /></span>
@@ -40,7 +40,7 @@ const IntegrationBar = () => (
         </div>
 
         <div className="flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-lg">
-          <ShieldCheck className="w-4 h-4 text-green-400" />
+          <img src="https://unavatar.io/twitter/KeeperHubApp" className="w-4 h-4 rounded-full bg-white" alt="KeeperHub Logo" />
           <div className="flex flex-col">
             <span className="text-[8px] font-black uppercase leading-none">KeeperHub MCP</span>
             <span className="text-[9px] font-black text-solar flex items-center gap-1">EXECUTION READY <div className="w-1.5 h-1.5 bg-solar rounded-full animate-pulse" /></span>
@@ -48,7 +48,7 @@ const IntegrationBar = () => (
         </div>
 
         <div className="flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-lg">
-          <Zap className="w-4 h-4 text-vibrant" />
+          <img src="https://cryptologos.cc/logos/uniswap-uni-logo.svg" className="w-4 h-4 rounded-full" alt="Uniswap Logo" />
           <div className="flex flex-col">
             <span className="text-[8px] font-black uppercase leading-none">Uniswap V3</span>
             <span className="text-[9px] font-black text-green-400 flex items-center gap-1">QUOTES LIVE <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" /></span>
@@ -171,7 +171,7 @@ const TradeSwarmApp = () => {
         {/* Badge below dropdown */}
         <div className="lg:self-end flex items-center gap-2 px-3 py-1 bg-white border-2 border-charcoal rounded-full -mt-4 mr-2">
           <Info className="w-3 h-3 text-vibrant" />
-          <span className="text-[8px] font-bold uppercase tracking-tight opacity-60">Real execution on Base Sepolia • Others in simulation</span>
+          <span className="text-[8px] font-bold uppercase tracking-tight opacity-60">Real execution on all networks • Live Production Mode</span>
         </div>
 
         <main className="flex-1 flex flex-col lg:flex-row gap-6 min-h-0">
