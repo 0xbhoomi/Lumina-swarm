@@ -75,30 +75,30 @@ All agents communicate **privately peer-to-peer** using Gensyn AXL, store persis
 - Agents **negotiate privately** using **Gensyn AXL**.
 - They store and retrieve long-term knowledge from **0G Storage + Compute**.
 
-
-
-
-
-
-
+## 🏗️ Detailed Project Architecture Flowchart
 
 ```mermaid
 flowchart TD
-    subgraph Problem["THE PROBLEM"]
-        A[Fast-Moving Crypto Markets]
-        B[Human Limitations]
-        C[Single AI Agents Fail]
+    %% ==================== PROBLEM ====================
+    subgraph Problem["❌ THE PROBLEM"]
+        A[Fast-Moving Crypto Markets\n24/7 News + Price Action]
+        B[Human Limitations\nCan't monitor everything simultaneously]
+        C[Single AI Agent Failures\n• No persistent memory\n• Unreliable execution\n• No coordination\n• High failure rate]
         A --> B
         B --> C
     end
 
-    subgraph LuminaSwarm["LUMINASWARM SOLUTION"]
-        User[User Query]
-        OpenClaw[OpenClaw Framework]
+    %% ==================== LUMINASWARM SOLUTION ====================
+    subgraph LuminaSwarm["🌟 LUMINASWARM SOLUTION\nMulti-Agent AI Trading Swarm"]
+        User[👤 User Query\n"Hey Swarm, what about ETH?"]
 
-        Listener[LISTENER AGENT]
-        Analyst[ANALYST AGENT]
-        Executor[EXECUTOR AGENT]
+        OpenClaw[🔧 OpenClaw Framework\nAgent Orchestration Layer]
+
+        Listener[🐝 LISTENER AGENT\n• Real-time social sentiment monitoring\n• Farcaster, X, decentralized graphs\n• Output: Sentiment Score 0.0-1.0]
+
+        Analyst[📊 ANALYST AGENT\n• Technical analysis & chart patterns\n• Uniswap V3 liquidity depth check\n• Output: Technical Score + Opportunity]
+
+        Executor[🚀 EXECUTOR AGENT\n• Risk assessment\n• Consensus building\n• Final trade decision\n• Output: Trade Parameters]
 
         User --> OpenClaw
         OpenClaw <--> Listener
@@ -106,30 +106,54 @@ flowchart TD
         OpenClaw <--> Executor
     end
 
-    Listener -- "P2P via Gensyn AXL" --- Analyst
-    Analyst -- "P2P via Gensyn AXL" --- Executor
-    Executor -- "P2P via Gensyn AXL" --- Listener
+    %% ==================== AGENT COMMUNICATION ====================
+    Listener -- "🔄 Peer-to-Peer Negotiation\nvia Gensyn AXL" --- Analyst
+    Analyst -- "🔄 Peer-to-Peer Negotiation\nvia Gensyn AXL" --- Executor
+    Executor -- "🔄 Peer-to-Peer Negotiation\nvia Gensyn AXL" --- Listener
 
-    subgraph Infrastructure["DECENTRALIZED INFRASTRUCTURE"]
-        OG[0G Storage + Compute]
-        Keeper[KeeperHub MCP]
-        Uni[Uniswap V3]
-        iNFT[ERC-7857 iNFT Brain]
+    %% ==================== INFRASTRUCTURE ====================
+    subgraph Infrastructure["🛠️ DECENTRALIZED INFRASTRUCTURE"]
+        OG[0G Storage + Compute\n• Persistent Memory (KV + Log)\n• Sealed Inference\n• Self-evolving learning]
+        Keeper[KeeperHub MCP\n• Safe Execution\n• Gas Optimization\n• Retry Logic\n• MEV Protection 99.9%]
+        Uni[Uniswap V3\n• Base Sepolia Testnet\n• Real quotes & swaps]
+        iNFT[ERC-7857 iNFT Brain\n• Ownership of swarm intelligence\n• Tradable & monetizable]
     end
 
     OpenClaw --> OG
+    Listener --> OG
+    Analyst --> OG
+    Executor --> OG
+
     Executor --> Keeper
     Keeper --> Uni
+
     OpenClaw --> iNFT
 
-    subgraph Output["OUTPUT"]
-        Trade[Autonomous Safe Trade]
-        Learn[Persistent Learning]
-        Own[Tradable iNFT Brain]
+    %% ==================== OUTPUT ====================
+    subgraph Output["✅ OUTPUT & VALUE CREATED"]
+        Trade[✅ Autonomous Safe Trade\nExecuted on Uniswap V3]
+        Learn[🧠 Persistent Learning\nSwarm becomes smarter with every trade]
+        Own[💎 Tradable iNFT Brain\nOwn, sell or share the entire swarm]
     end
 
     Uni --> Trade
     OG --> Learn
     iNFT --> Own
-- When a trade is decided, **KeeperHub** ensures it executes safely.
-- The actual swap happens on **Uniswap V3**.
+
+    %% ==================== STYLING ====================
+    classDef problem fill:#FFEDD5,stroke:#FF9F1C,stroke-width:3px
+    classDef solution fill:#FFF8EE,stroke:#FF9F1C,stroke-width:4px
+    classDef agent fill:#FCD34D,stroke:#FF9F1C,stroke-width:3px
+    classDef infra fill:#FFEDD5,stroke:#FF9F1C,stroke-width:2px
+    classDef output fill:#A7E8A7,stroke:#FF9F1C,stroke-width:3px
+
+    class Problem problem
+    class LuminaSwarm solution
+    class Listener,Analyst,Executor agent
+    class Infrastructure infra
+    class Output output
+
+
+
+
+
