@@ -143,7 +143,6 @@ const TradeSwarmApp = () => {
         {/* Header */}
         <header className="flex flex-col lg:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-4">
-            <motion.div 
             <img src="/logo.png" className="w-14 h-14 border-3 border-charcoal shadow-brutal rounded-2xl object-cover" alt="Lumina-Swarm" />
             <div>
               <h1 className="text-4xl lg:text-5xl font-black uppercase tracking-tighter italic">Lumina-Swarm</h1>
