@@ -53,17 +53,8 @@ All agents communicate **privately peer-to-peer** using Gensyn AXL, store persis
 | Trading            | Uniswap V3                          |
 | Ownership          | ERC-7857 iNFT                       |
 | Frontend           | Next.js / Antigravity + Neo-Brutalism |
-| Network            | Base Sepolia (Testnet)              |
+| Network            | Base Sepolia (Testnet)              
 
----
-
-##  Quick Start
-
-### 1. Clone & Install
-```bash
-git clone https://github.com/yourusername/luminaswarm.git
-cd luminaswarm
-npm install
 ```mermaid
 flowchart TD
     Problem[" THE PROBLEM"] --> LuminaSwarm[" LUMINASWARM"]
