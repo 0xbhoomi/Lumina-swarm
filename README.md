@@ -75,12 +75,11 @@ All agents communicate **privately peer-to-peer** using Gensyn AXL, store persis
 - Agents **negotiate privately** using **Gensyn AXL**.
 - They store and retrieve long-term knowledge from **0G Storage + Compute**.
 
-## 🏗️ Detailed Project Architecture Flowchart
 
 ```mermaid
 flowchart TD
     %% ==================== PROBLEM ====================
-    subgraph Problem["❌ THE PROBLEM"]
+    subgraph Problem[" THE PROBLEM"]
         A[Fast-Moving Crypto Markets\n24/7 News + Price Action]
         B[Human Limitations\nCan't monitor everything simultaneously]
         C[Single AI Agent Failures\n• No persistent memory\n• Unreliable execution\n• No coordination\n• High failure rate]
@@ -89,16 +88,16 @@ flowchart TD
     end
 
     %% ==================== LUMINASWARM SOLUTION ====================
-    subgraph LuminaSwarm["🌟 LUMINASWARM SOLUTION\nMulti-Agent AI Trading Swarm"]
-        User[👤 User Query\n"Hey Swarm, what about ETH?"]
+    subgraph LuminaSwarm[" LUMINASWARM SOLUTION\nMulti-Agent AI Trading Swarm"]
+        User[ User Query\n"Hey Swarm, what about ETH?"]
 
-        OpenClaw[🔧 OpenClaw Framework\nAgent Orchestration Layer]
+        OpenClaw[ OpenClaw Framework\nAgent Orchestration Layer]
 
-        Listener[🐝 LISTENER AGENT\n• Real-time social sentiment monitoring\n• Farcaster, X, decentralized graphs\n• Output: Sentiment Score 0.0-1.0]
+        Listener[ LISTENER AGENT\n• Real-time social sentiment monitoring\n• Farcaster, X, decentralized graphs\n• Output: Sentiment Score 0.0-1.0]
 
-        Analyst[📊 ANALYST AGENT\n• Technical analysis & chart patterns\n• Uniswap V3 liquidity depth check\n• Output: Technical Score + Opportunity]
+        Analyst[ ANALYST AGENT\n• Technical analysis & chart patterns\n• Uniswap V3 liquidity depth check\n• Output: Technical Score + Opportunity]
 
-        Executor[🚀 EXECUTOR AGENT\n• Risk assessment\n• Consensus building\n• Final trade decision\n• Output: Trade Parameters]
+        Executor[ EXECUTOR AGENT\n• Risk assessment\n• Consensus building\n• Final trade decision\n• Output: Trade Parameters]
 
         User --> OpenClaw
         OpenClaw <--> Listener
@@ -107,12 +106,12 @@ flowchart TD
     end
 
     %% ==================== AGENT COMMUNICATION ====================
-    Listener -- "🔄 Peer-to-Peer Negotiation\nvia Gensyn AXL" --- Analyst
-    Analyst -- "🔄 Peer-to-Peer Negotiation\nvia Gensyn AXL" --- Executor
-    Executor -- "🔄 Peer-to-Peer Negotiation\nvia Gensyn AXL" --- Listener
+    Listener -- " Peer-to-Peer Negotiation\nvia Gensyn AXL" --- Analyst
+    Analyst -- " Peer-to-Peer Negotiation\nvia Gensyn AXL" --- Executor
+    Executor -- " Peer-to-Peer Negotiation\nvia Gensyn AXL" --- Listener
 
     %% ==================== INFRASTRUCTURE ====================
-    subgraph Infrastructure["🛠️ DECENTRALIZED INFRASTRUCTURE"]
+    subgraph Infrastructure[" DECENTRALIZED INFRASTRUCTURE"]
         OG[0G Storage + Compute\n• Persistent Memory (KV + Log)\n• Sealed Inference\n• Self-evolving learning]
         Keeper[KeeperHub MCP\n• Safe Execution\n• Gas Optimization\n• Retry Logic\n• MEV Protection 99.9%]
         Uni[Uniswap V3\n• Base Sepolia Testnet\n• Real quotes & swaps]
@@ -130,10 +129,10 @@ flowchart TD
     OpenClaw --> iNFT
 
     %% ==================== OUTPUT ====================
-    subgraph Output["✅ OUTPUT & VALUE CREATED"]
-        Trade[✅ Autonomous Safe Trade\nExecuted on Uniswap V3]
-        Learn[🧠 Persistent Learning\nSwarm becomes smarter with every trade]
-        Own[💎 Tradable iNFT Brain\nOwn, sell or share the entire swarm]
+    subgraph Output[" OUTPUT & VALUE CREATED"]
+        Trade[ Autonomous Safe Trade\nExecuted on Uniswap V3]
+        Learn[ Persistent Learning\nSwarm becomes smarter with every trade]
+        Own[ Tradable iNFT Brain\nOwn, sell or share the entire swarm]
     end
 
     Uni --> Trade
