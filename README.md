@@ -64,3 +64,37 @@ All agents communicate **privately peer-to-peer** using Gensyn AXL, store persis
 git clone https://github.com/yourusername/luminaswarm.git
 cd luminaswarm
 npm install
+```mermaid
+flowchart TD
+    Problem[" THE PROBLEM"] --> LuminaSwarm[" LUMINASWARM"]
+    LuminaSwarm --> Infrastructure[" Infrastructure"]
+    Infrastructure --> Output[" RESULTS"]
+
+    subgraph Problem
+        A[Fast Crypto Markets] --> B[Humans Can't Keep Up] --> C[Single Agents Fail]
+    end
+
+    subgraph LuminaSwarm
+        User --> OpenClaw[OpenClaw]
+        OpenClaw --> Listener[ Listener<br/>Social Sentiment]
+        OpenClaw --> Analyst[ Analyst<br/>Technical + Liquidity]
+        OpenClaw --> Executor[ Executor<br/>Trade Decision]
+    end
+
+    Listener ---|"Gensyn AXL P2P"| Analyst
+    Analyst ---|"Gensyn AXL P2P"| Executor
+
+    subgraph Infrastructure
+        OG[0G Storage + Compute]
+        Keeper[KeeperHub MCP]
+        Uni[Uniswap V3]
+        iNFT[iNFT Brain]
+    end
+
+    OpenClaw --> OG
+    Executor --> Keeper --> Uni
+    OpenClaw --> iNFT
+
+    Uni --> Trade[Autonomous Safe Trade]
+    OG --> Learning[Persistent Learning]
+    iNFT --> Ownership[Tradable iNFT]
