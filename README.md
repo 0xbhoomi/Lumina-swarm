@@ -78,9 +78,6 @@ All agents communicate **privately peer-to-peer** using Gensyn AXL, store persis
 - The actual swap happens on **Uniswap V3**.
 - Finally, the entire swarm intelligence can be minted as an **ERC-7857 iNFT** on 0G.
 
-This combination gives LuminaSwarm **real utility, reliability, and decentralization** — exactly what judges are looking for.
-
-
 ```mermaid
 flowchart TD
     subgraph Problem["THE PROBLEM"]
@@ -130,5 +127,6 @@ flowchart TD
     Uni --> Trade
     OG --> Learn
     iNFT --> Own
----
+
+This combination gives LuminaSwarm **real utility, reliability, and decentralization** — exactly what judges are looking for.
 
