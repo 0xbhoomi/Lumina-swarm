@@ -89,7 +89,7 @@ flowchart TD
 
     %% ==================== LUMINASWARM SOLUTION ====================
     subgraph LuminaSwarm[" LUMINASWARM SOLUTION\nMulti-Agent AI Trading Swarm"]
-        User[ User Query\n"Hey Swarm, what about ETH?"]
+       User[ User Query\n"Hey Swarm, what about ETH?"]
 
         OpenClaw[ OpenClaw Framework\nAgent Orchestration Layer]
 
