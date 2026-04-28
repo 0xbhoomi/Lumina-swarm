@@ -74,8 +74,13 @@ All agents communicate **privately peer-to-peer** using Gensyn AXL, store persis
 - **User** asks a question → **OpenClaw** routes it to the three agents.
 - Agents **negotiate privately** using **Gensyn AXL**.
 - They store and retrieve long-term knowledge from **0G Storage + Compute**.
-- When a trade is decided, **KeeperHub** ensures it executes safely.
-- The actual swap happens on **Uniswap V3**.
+
+
+
+
+
+
+
 
 ```mermaid
 flowchart TD
@@ -126,5 +131,5 @@ flowchart TD
     Uni --> Trade
     OG --> Learn
     iNFT --> Own
-- Finally, the entire swarm intelligence can be minted as an **ERC-7857 iNFT** on 0G.
-
+- When a trade is decided, **KeeperHub** ensures it executes safely.
+- The actual swap happens on **Uniswap V3**.
