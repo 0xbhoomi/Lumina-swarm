@@ -1,16 +1,66 @@
-# React + Vite
+#  LuminaSwarm
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**AI Research & Trading Swarm**  
+**ETHGlobal Open Agents Hackathon 2026**  
 
-Currently, two official plugins are available:
+A decentralized multi-agent system that turns social sentiment + technical analysis into safe, autonomous Uniswap trades using the full power of 0G, Gensyn AXL, KeeperHub, and Uniswap V3.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+##  Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**LuminaSwarm** is a **self-coordinating swarm of AI agents** that works 24/7 as your personal professional trading desk.
 
-## Expanding the ESLint configuration
+### How it Works
+1. **Listener Agent** → Monitors social sentiment (Farcaster, Twitter/X, etc.)
+2. **Analyst Agent** → Reads technical indicators and Uniswap V3 liquidity
+3. **Executor Agent** → Reaches consensus and triggers safe trades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+All agents communicate **privately peer-to-peer** using Gensyn AXL, store persistent memory on 0G Storage, and execute reliably through KeeperHub.
+
+---
+
+##  Prize Track Submissions
+
+- **0G Best Autonomous Agents, Swarms & iNFT** → Persistent memory + iNFT Brain
+- **Gensyn Best Application of AXL** → Real P2P agent-to-agent communication
+- **Uniswap Best API Integration** → Real Uniswap V3 quotes & swaps
+- **KeeperHub Best Use** → Safe execution, gas optimization & MEV protection
+
+---
+
+##  Key Features
+
+- **Real Multi-Agent Collaboration** via Gensyn AXL (no central broker)
+- **Persistent Memory** using 0G Storage (KV + Log) — swarm gets smarter every day
+- **Sealed AI Inference** on 0G Compute
+- **Reliable Execution** powered by KeeperHub MCP (retry logic, gas optimization, MEV protection)
+- **Onchain Trading** on Uniswap V3 (Base Sepolia)
+- **iNFT Brain** — Mint the entire swarm intelligence as ERC-7857 iNFT
+- **Beautiful Neo-Brutalist UI** with warm playful design
+- **Multi-chain ready** (focused on Base Sepolia for hackathon)
+
+---
+
+##  Tech Stack
+
+| Component          | Technology                          |
+|--------------------|-------------------------------------|
+| Agent Framework    | OpenClaw                            |
+| P2P Communication  | Gensyn AXL                          |
+| Storage & Compute  | 0G Storage + 0G Compute             |
+| Execution Layer    | KeeperHub MCP                       |
+| Trading            | Uniswap V3                          |
+| Ownership          | ERC-7857 iNFT                       |
+| Frontend           | Next.js / Antigravity + Neo-Brutalism |
+| Network            | Base Sepolia (Testnet)              |
+
+---
+
+##  Quick Start
+
+### 1. Clone & Install
+```bash
+git clone https://github.com/yourusername/luminaswarm.git
+cd luminaswarm
+npm install
