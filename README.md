@@ -104,3 +104,29 @@ flowchart TD
     Uni --> Trade
     OG --> Learn
     iNFT --> Own
+---
+
+## 🔗 Sponsor Integrations & Usage
+
+### Powered By
+
+| Project       | Logo | Official Link | How LuminaSwarm Uses It |
+|---------------|------|---------------|-------------------------|
+| **0G**        | ![0G](https://0g.ai/favicon.ico) | [0g.ai](https://0g.ai/) | • Persistent swarm memory using 0G Storage (KV + Log)<br>• Sealed AI inference via 0G Compute<br>• Long-term learning so the swarm gets smarter every trade |
+| **Gensyn AXL** | ![Gensyn](https://www.gensyn.ai/favicon.ico) | [gensyn.ai](https://www.gensyn.ai/) <br>[AXL Docs](https://docs.gensyn.ai/tech/agent-exchange-layer) | • True peer-to-peer communication between Listener, Analyst & Executor agents<br>• No central server — fully decentralized agent negotiation |
+| **Uniswap V3** | ![Uniswap](https://uniswap.org/favicon.ico) | [developers.uniswap.org](https://developers.uniswap.org/) | • Real-time price quotes and liquidity data<br>• Safe token swaps on Base Sepolia<br>• Core trading execution layer |
+| **KeeperHub** | ![KeeperHub](https://keeperhub.com/favicon.ico) | [keeperhub.com](https://keeperhub.com/) <br>[App](https://app.keeperhub.com/) | • Reliable on-chain execution (retry logic, gas optimization)<br>• MEV protection and slippage control<br>• MCP integration for safe autonomous trades |
+
+---
+
+### How These Technologies Work Together in LuminaSwarm
+
+- **User** asks a question → **OpenClaw** routes it to the three agents.
+- Agents **negotiate privately** using **Gensyn AXL**.
+- They store and retrieve long-term knowledge from **0G Storage + Compute**.
+- When a trade is decided, **KeeperHub** ensures it executes safely.
+- The actual swap happens on **Uniswap V3**.
+- Finally, the entire swarm intelligence can be minted as an **ERC-7857 iNFT** on 0G.
+
+This combination gives LuminaSwarm **real utility, reliability, and decentralization** — exactly what judges are looking for.
+
