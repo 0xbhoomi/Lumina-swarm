@@ -76,7 +76,6 @@ All agents communicate **privately peer-to-peer** using Gensyn AXL, store persis
 - They store and retrieve long-term knowledge from **0G Storage + Compute**.
 - When a trade is decided, **KeeperHub** ensures it executes safely.
 - The actual swap happens on **Uniswap V3**.
-- Finally, the entire swarm intelligence can be minted as an **ERC-7857 iNFT** on 0G.
 
 ```mermaid
 flowchart TD
@@ -127,6 +126,5 @@ flowchart TD
     Uni --> Trade
     OG --> Learn
     iNFT --> Own
-
-This combination gives LuminaSwarm **real utility, reliability, and decentralization** — exactly what judges are looking for.
+- Finally, the entire swarm intelligence can be minted as an **ERC-7857 iNFT** on 0G.
 
