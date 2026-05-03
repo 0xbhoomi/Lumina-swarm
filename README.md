@@ -117,18 +117,23 @@ flowchart TD
 We’re grateful to the teams and platforms that made building LuminaSwarm possible.
 
 ETHGlobal
+
 ETHGlobal provided an excellent environment to experiment, build, and iterate quickly. The structure of the hackathon and access to diverse partner technologies made it easier to transform an idea into a working prototype in a short time.
 
 0G
+
 0G introduced a strong perspective on decentralized storage and compute for AI systems. Its approach aligns well with LuminaSwarm’s need for persistent memory and evolving intelligence across agents.
 
 Gensyn
+
 Gensyn’s vision of distributed and collaborative AI directly inspired our multi-agent coordination model. It helped shape how agents in LuminaSwarm communicate, negotiate, and refine decisions.
 
 KeeperHub
+
 KeeperHub contributed to the idea of safe and reliable execution. Concepts like automation, retry logic, and transaction safety influenced how we designed the execution layer of the swarm.
 
 Uniswap Foundation
+
 Uniswap played a key role in enabling real-world DeFi interaction. It provided the foundation for liquidity analysis and on-chain trading, making the system practical and aligned with real market dynamics.
 
  Final Note
