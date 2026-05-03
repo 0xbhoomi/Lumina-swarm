@@ -99,19 +99,16 @@ flowchart TD
     OG --> Learn
     iNFT --> Own
 
-    %% ==================== STYLING ====================
-    classDef problem fill:#FFEDD5,stroke:#FF9F1C,stroke-width:2px
-    classDef solution fill:#FFF8EE,stroke:#FF9F1C,stroke-width:3px
-    classDef agent fill:#FCD34D,stroke:#FF9F1C,stroke-width:2px
-    classDef infra fill:#FFEDD5,stroke:#FF9F1C,stroke-width:2px
-    classDef output fill:#A7E8A7,stroke:#FF9F1C,stroke-width:2px
+    %% ==================== BLACK THEME STYLING ====================
+    classDef problem fill:#000000,stroke:#ffffff,stroke-width:2px,color:#ffffff
+    classDef solution fill:#000000,stroke:#ffffff,stroke-width:3px,color:#ffffff
+    classDef agent fill:#000000,stroke:#ffffff,stroke-width:2px,color:#ffffff
+    classDef infra fill:#000000,stroke:#ffffff,stroke-width:2px,color:#ffffff
+    classDef output fill:#000000,stroke:#ffffff,stroke-width:2px,color:#ffffff
 
     class A,B,C problem
     class User,OpenClaw solution
     class Listener,Analyst,Executor agent
     class OG,Keeper,Uni,iNFT infra
     class Trade,Learn,Own output
-```
-
-   
 ```
