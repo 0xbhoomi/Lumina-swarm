@@ -36,7 +36,7 @@ LuminaSwarm/
 - **KeeperHub MCP**: Standardized safe execution layer.
 - **CoinGecko**: Real-time market intelligence.
 
-- ```mermaid
+```mermaid
 flowchart TD
     %% ==================== PROBLEM ====================
     subgraph Problem["THE PROBLEM"]
@@ -111,4 +111,7 @@ flowchart TD
     class Listener,Analyst,Executor agent
     class OG,Keeper,Uni,iNFT infra
     class Trade,Learn,Own output
+```
+
+   
 ```
