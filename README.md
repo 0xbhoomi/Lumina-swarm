@@ -35,3 +35,80 @@ LuminaSwarm/
 - **0G Storage**: Persistent decentralized memory.
 - **KeeperHub MCP**: Standardized safe execution layer.
 - **CoinGecko**: Real-time market intelligence.
+
+- ```mermaid
+flowchart TD
+    %% ==================== PROBLEM ====================
+    subgraph Problem["THE PROBLEM"]
+        A["Fast-Moving Crypto Markets<br/>24/7 News + Price Action"]
+        B["Human Limitations<br/>Can't monitor everything simultaneously"]
+        C["Single AI Agent Failures<br/>- No persistent memory<br/>- Unreliable execution<br/>- No coordination<br/>- High failure rate"]
+        A --> B
+        B --> C
+    end
+
+    %% ==================== LUMINASWARM SOLUTION ====================
+    subgraph LuminaSwarm["LUMINASWARM SOLUTION<br/>Multi-Agent AI Trading Swarm"]
+        User["User Query<br/>Hey Swarm, what about ETH?"]
+
+        OpenClaw["OpenClaw Framework<br/>Agent Orchestration Layer"]
+
+        Listener["LISTENER AGENT<br/>- Real-time sentiment monitoring<br/>- Farcaster, X, graphs<br/>- Output: Sentiment Score"]
+
+        Analyst["ANALYST AGENT<br/>- Technical analysis<br/>- Uniswap V3 liquidity check<br/>- Output: Technical Score"]
+
+        Executor["EXECUTOR AGENT<br/>- Risk assessment<br/>- Consensus building<br/>- Final decision"]
+
+        User --> OpenClaw
+        OpenClaw <--> Listener
+        OpenClaw <--> Analyst
+        OpenClaw <--> Executor
+    end
+
+    %% ==================== AGENT COMMUNICATION ====================
+    Listener --- Analyst
+    Analyst --- Executor
+    Executor --- Listener
+
+    %% ==================== INFRASTRUCTURE ====================
+    subgraph Infrastructure["DECENTRALIZED INFRASTRUCTURE"]
+        OG["0G Storage + Compute<br/>- Persistent Memory<br/>- Learning"]
+        Keeper["KeeperHub MCP<br/>- Safe Execution<br/>- Gas Optimization<br/>- Retry Logic"]
+        Uni["Uniswap V3<br/>- Base Sepolia Testnet"]
+        iNFT["ERC-7857 iNFT Brain<br/>- Tradable Intelligence"]
+    end
+
+    OpenClaw --> OG
+    Listener --> OG
+    Analyst --> OG
+    Executor --> OG
+
+    Executor --> Keeper
+    Keeper --> Uni
+
+    OpenClaw --> iNFT
+
+    %% ==================== OUTPUT ====================
+    subgraph Output["OUTPUT & VALUE CREATED"]
+        Trade["Autonomous Safe Trade<br/>Executed on Uniswap"]
+        Learn["Persistent Learning<br/>Swarm improves over time"]
+        Own["Tradable iNFT Brain<br/>Own and share intelligence"]
+    end
+
+    Uni --> Trade
+    OG --> Learn
+    iNFT --> Own
+
+    %% ==================== STYLING ====================
+    classDef problem fill:#FFEDD5,stroke:#FF9F1C,stroke-width:2px
+    classDef solution fill:#FFF8EE,stroke:#FF9F1C,stroke-width:3px
+    classDef agent fill:#FCD34D,stroke:#FF9F1C,stroke-width:2px
+    classDef infra fill:#FFEDD5,stroke:#FF9F1C,stroke-width:2px
+    classDef output fill:#A7E8A7,stroke:#FF9F1C,stroke-width:2px
+
+    class A,B,C problem
+    class User,OpenClaw solution
+    class Listener,Analyst,Executor agent
+    class OG,Keeper,Uni,iNFT infra
+    class Trade,Learn,Own output
+```
