@@ -20,6 +20,7 @@ LuminaSwarm/
 
 ## Getting Started
 
+
 ### Backend
 1. Install dependencies: `pip install -r backend/requirements.txt`
 2. Run the swarm: `python -m backend.main`
