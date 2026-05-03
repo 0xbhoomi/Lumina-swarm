@@ -1,24 +1,24 @@
 {
   "analyst_memory_latest": {
     "agent": "analyst_agent",
-    "timestamp": 136466.519544,
+    "timestamp": 141706.1851674,
     "input": {
       "agent": "listener_agent",
-      "timestamp": 136465.1504871,
+      "timestamp": 141705.0051535,
       "input": {},
       "output": {
         "sentiment_score": 0.05,
         "sentiment_label": "bearish",
-        "coin_id": "terra-luna",
-        "coin_name": "Terra Luna Classic",
-        "coin_symbol": "LUNC",
+        "coin_id": "babylon",
+        "coin_name": "Babylon",
+        "coin_symbol": "BABY",
         "source": "coingecko_trending"
       }
     },
     "output": {
-      "coin_id": "terra-luna",
+      "coin_id": "babylon",
       "technical_summary": {
-        "rsi": 76.93,
+        "rsi": 71.79,
         "trend": "bearish",
         "rsi_delta": 0.0
       },
@@ -27,27 +27,27 @@
   },
   "execution_history_latest": {
     "agent": "executor_agent",
-    "timestamp": 136473.745178,
+    "timestamp": 141717.5170035,
     "input": {
       "agent": "analyst_agent",
-      "timestamp": 136466.0056848,
+      "timestamp": 141706.1851674,
       "input": {
         "agent": "listener_agent",
-        "timestamp": 136465.1504871,
+        "timestamp": 141705.0051535,
         "input": {},
         "output": {
           "sentiment_score": 0.05,
           "sentiment_label": "bearish",
-          "coin_id": "terra-luna",
-          "coin_name": "Terra Luna Classic",
-          "coin_symbol": "LUNC",
+          "coin_id": "babylon",
+          "coin_name": "Babylon",
+          "coin_symbol": "BABY",
           "source": "coingecko_trending"
         }
       },
       "output": {
-        "coin_id": "terra-luna",
+        "coin_id": "babylon",
         "technical_summary": {
-          "rsi": 76.93,
+          "rsi": 71.79,
           "trend": "bearish",
           "rsi_delta": 0.0
         },
@@ -62,14 +62,14 @@
   },
   "sentiment_history_latest": {
     "agent": "listener_agent",
-    "timestamp": 136465.1504871,
+    "timestamp": 141705.0051535,
     "input": {},
     "output": {
       "sentiment_score": 0.05,
       "sentiment_label": "bearish",
-      "coin_id": "terra-luna",
-      "coin_name": "Terra Luna Classic",
-      "coin_symbol": "LUNC",
+      "coin_id": "babylon",
+      "coin_name": "Babylon",
+      "coin_symbol": "BABY",
       "source": "coingecko_trending"
     }
   },
