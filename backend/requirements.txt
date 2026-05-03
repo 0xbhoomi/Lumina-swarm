@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+httpx
+web3
+python-dotenv
+requests

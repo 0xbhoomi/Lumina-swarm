@@ -1,143 +1,36 @@
-#  LuminaSwarm
+# LuminaSwarm: Autonomous Agent Economy
 
-**AI Research & Trading Swarm**  
-**ETHGlobal Open Agents Hackathon 2026**  
+LuminaSwarm is a decentralized multi-agent system designed for automated market analysis and trade execution. It leverages P2P communication, persistent decentralized memory, and safe intent execution.
 
-A decentralized multi-agent system that turns social sentiment + technical analysis into safe, autonomous Uniswap trades using the full power of 0G, Gensyn AXL, KeeperHub, and Uniswap V3.
+## Project Structure
 
----
-
-##  Project Overview
-
-**LuminaSwarm** is a **self-coordinating swarm of AI agents** that works 24/7 as your personal professional trading desk.
-
-### How it Works
-1. **Listener Agent** → Monitors social sentiment (Farcaster, Twitter/X, etc.)
-2. **Analyst Agent** → Reads technical indicators and Uniswap V3 liquidity
-3. **Executor Agent** → Reaches consensus and triggers safe trades
-
-All agents communicate **privately peer-to-peer** using Gensyn AXL, store persistent memory on 0G Storage, and execute reliably through KeeperHub.
-
----
-
-##  Prize Track Submissions
-
-- **0G Best Autonomous Agents, Swarms & iNFT** → Persistent memory + iNFT Brain
-- **Gensyn Best Application of AXL** → Real P2P agent-to-agent communication
-- **Uniswap Best API Integration** → Real Uniswap V3 quotes & swaps
-- **KeeperHub Best Use** → Safe execution, gas optimization & MEV protection
-
----
-
-##  Key Features
-
-- **Real Multi-Agent Collaboration** via Gensyn AXL (no central broker)
-- **Persistent Memory** using 0G Storage (KV + Log) — swarm gets smarter every day
-- **Sealed AI Inference** on 0G Compute
-- **Reliable Execution** powered by KeeperHub MCP (retry logic, gas optimization, MEV protection)
-- **Onchain Trading** on Uniswap V3 (Base Sepolia)
-- **iNFT Brain** — Mint the entire swarm intelligence as ERC-7857 iNFT
-- **Beautiful Neo-Brutalist UI** with warm playful design
-- **Multi-chain ready** (focused on Base Sepolia for hackathon)
-
----
-
-##  Tech Stack
-
-| Component          | Technology                          |
-|--------------------|-------------------------------------|
-| Agent Framework    | OpenClaw                            |
-| P2P Communication  | Gensyn AXL                          |
-| Storage & Compute  | 0G Storage + 0G Compute             |
-| Execution Layer    | KeeperHub MCP                       |
-| Trading            | Uniswap V3                          |
-| Ownership          | ERC-7857 iNFT                       |
-| Frontend           | Next.js / Antigravity + Neo-Brutalism |
-| Network            | Base Sepolia (Testnet)  
-
-
-## 🔗 Sponsor Integrations & Usage
-
-### Powered By
-
-| Project       | Logo | Official Link | How LuminaSwarm Uses It |
-|---------------|------|---------------|-------------------------|
-| **0G**        | ![0G](https://0g.ai/favicon.ico) | [0g.ai](https://0g.ai/) | • Persistent swarm memory using 0G Storage (KV + Log)<br>• Sealed AI inference via 0G Compute<br>• Long-term learning so the swarm gets smarter every trade |
-| **Gensyn AXL** | ![Gensyn](https://www.gensyn.ai/favicon.ico) | [gensyn.ai](https://www.gensyn.ai/) <br>[AXL Docs](https://docs.gensyn.ai/tech/agent-exchange-layer) | • True peer-to-peer communication between Listener, Analyst & Executor agents<br>• No central server — fully decentralized agent negotiation |
-| **Uniswap V3** | ![Uniswap](https://uniswap.org/favicon.ico) | [developers.uniswap.org](https://developers.uniswap.org/) | • Real-time price quotes and liquidity data<br>• Safe token swaps on Base Sepolia<br>• Core trading execution layer |
-| **KeeperHub** | ![KeeperHub](https://keeperhub.com/favicon.ico) | [keeperhub.com](https://keeperhub.com/) <br>[App](https://app.keeperhub.com/) | • Reliable on-chain execution (retry logic, gas optimization)<br>• MEV protection and slippage control<br>• MCP integration for safe autonomous trades |
-
----
-
-### How These Technologies Work Together in LuminaSwarm
-
-- **User** asks a question → **OpenClaw** routes it to the three agents.
-- Agents **negotiate privately** using **Gensyn AXL**.
-- They store and retrieve long-term knowledge from **0G Storage + Compute**.
-
-
-```mermaid
-flowchart TD
-    %% ==================== PROBLEM ====================
-    subgraph Problem["THE PROBLEM"]
-        A["Fast-Moving Crypto Markets<br/>24/7 News + Price Action"]
-        B["Human Limitations<br/>Can't monitor everything simultaneously"]
-        C["Single AI Agent Failures<br/>- No persistent memory<br/>- Unreliable execution<br/>- No coordination<br/>- High failure rate"]
-        A --> B
-        B --> C
-    end
-
-    %% ==================== SOLUTION ====================
-    subgraph LuminaSwarm["LUMINASWARM SOLUTION<br/>Multi-Agent AI Trading Swarm"]
-        User["User Query<br/>Hey Swarm, what about ETH?"]
-
-        OpenClaw["OpenClaw Framework<br/>Agent Orchestration Layer"]
-
-        Listener["LISTENER AGENT<br/>- Real-time sentiment monitoring<br/>- Farcaster, X<br/>- Output: Sentiment Score"]
-
-        Analyst["ANALYST AGENT<br/>- Technical analysis<br/>- Liquidity check<br/>- Output: Opportunity"]
-
-        Executor["EXECUTOR AGENT<br/>- Risk assessment<br/>- Decision making<br/>- Output: Trade Parameters"]
-
-        User --> OpenClaw
-        OpenClaw <--> Listener
-        OpenClaw <--> Analyst
-        OpenClaw <--> Executor
-    end
-
-    %% ==================== COMMUNICATION ====================
-    Listener --- Analyst
-    Analyst --- Executor
-    Executor --- Listener
-
-    %% ==================== INFRASTRUCTURE ====================
-    subgraph Infrastructure["DECENTRALIZED INFRASTRUCTURE"]
-        OG["0G Storage + Compute<br/>- Persistent Memory<br/>- Learning"]
-        Keeper["KeeperHub MCP<br/>- Safe Execution<br/>- Gas Optimization"]
-        Uni["Uniswap V3<br/>- Base Sepolia"]
-        iNFT["ERC-7857 iNFT Brain<br/>- Tradable Intelligence"]
-    end
-
-    OpenClaw --> OG
-    Listener --> OG
-    Analyst --> OG
-    Executor --> OG
-
-    Executor --> Keeper
-    Keeper --> Uni
-
-    OpenClaw --> iNFT
-
-    %% ==================== OUTPUT ====================
-    subgraph Output["OUTPUT & VALUE"]
-        Trade["Autonomous Safe Trade"]
-        Learn["Persistent Learning"]
-        Own["Tradable iNFT Brain"]
-    end
-
-    Uni --> Trade
-    OG --> Learn
-    iNFT --> Own
+```text
+LuminaSwarm/
+├── backend/                # Python Fast API & Agents
+│   ├── main.py             # Entry point
+│   ├── orchestrator.py     # Swarm lifecycle manager
+│   ├── agents/             # Autonomous Agents (Listener, Analyst, Executor)
+│   ├── services/           # External API integrations (CoinGecko, KeeperHub)
+│   ├── core/               # Infrastructure (AXL Bus, 0G Memory)
+│   └── utils/              # Shared utilities
+├── frontend/               # React (Vite) User Interface
+├── contracts/              # Solidity Smart Contracts
+└── docs/                   # Documentation
 ```
 
+## Getting Started
 
+### Backend
+1. Install dependencies: `pip install -r backend/requirements.txt`
+2. Run the swarm: `python -m backend.main`
+
+### Frontend
+1. Navigate to frontend: `cd frontend`
+2. Install dependencies: `npm install`
+3. Run dev server: `npm run dev`
+
+## Core Technologies
+- **Gensyn AXL**: Peer-to-peer agent communication.
+- **0G Storage**: Persistent decentralized memory.
+- **KeeperHub MCP**: Standardized safe execution layer.
+- **CoinGecko**: Real-time market intelligence.

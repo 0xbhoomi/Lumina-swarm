@@ -1,0 +1,83 @@
+{
+  "analyst_memory_latest": {
+    "agent": "analyst_agent",
+    "timestamp": 136466.519544,
+    "input": {
+      "agent": "listener_agent",
+      "timestamp": 136465.1504871,
+      "input": {},
+      "output": {
+        "sentiment_score": 0.05,
+        "sentiment_label": "bearish",
+        "coin_id": "terra-luna",
+        "coin_name": "Terra Luna Classic",
+        "coin_symbol": "LUNC",
+        "source": "coingecko_trending"
+      }
+    },
+    "output": {
+      "coin_id": "terra-luna",
+      "technical_summary": {
+        "rsi": 76.93,
+        "trend": "bearish",
+        "rsi_delta": 0.0
+      },
+      "signal": "sell"
+    }
+  },
+  "execution_history_latest": {
+    "agent": "executor_agent",
+    "timestamp": 136473.745178,
+    "input": {
+      "agent": "analyst_agent",
+      "timestamp": 136466.0056848,
+      "input": {
+        "agent": "listener_agent",
+        "timestamp": 136465.1504871,
+        "input": {},
+        "output": {
+          "sentiment_score": 0.05,
+          "sentiment_label": "bearish",
+          "coin_id": "terra-luna",
+          "coin_name": "Terra Luna Classic",
+          "coin_symbol": "LUNC",
+          "source": "coingecko_trending"
+        }
+      },
+      "output": {
+        "coin_id": "terra-luna",
+        "technical_summary": {
+          "rsi": 76.93,
+          "trend": "bearish",
+          "rsi_delta": 0.0
+        },
+        "signal": "sell"
+      }
+    },
+    "output": {
+      "decision": "sell",
+      "confidence": 0.8,
+      "reason": "System policy evaluated: SELL (Confidence boosted by history)"
+    }
+  },
+  "sentiment_history_latest": {
+    "agent": "listener_agent",
+    "timestamp": 136465.1504871,
+    "input": {},
+    "output": {
+      "sentiment_score": 0.05,
+      "sentiment_label": "bearish",
+      "coin_id": "terra-luna",
+      "coin_name": "Terra Luna Classic",
+      "coin_symbol": "LUNC",
+      "source": "coingecko_trending"
+    }
+  },
+  "ui_event": {
+    "account": "0x71aee14669eaf0a2f55b783eed64ad12b66177ee",
+    "amount": "0.01",
+    "chain": "Base Sepolia",
+    "txHash": "0x12f28cb014025247c6454bd3fa93efbf14f12f46f956c9f3828b208c0c4dd29f",
+    "timestamp": 1777790494713
+  }
+}
